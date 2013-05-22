@@ -3,9 +3,9 @@
 ### Directives ###
 
 # register the module with Angular
-angular.module('app.directives', [
+angular.module('rubynas-admin.directives', [
   # require the 'app.service' module
-  'app.services'
+  'rubynas-admin.services'
 ])
 
 .directive('appVersion', [

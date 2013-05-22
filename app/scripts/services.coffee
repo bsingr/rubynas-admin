@@ -2,6 +2,6 @@
 
 ### Sevices ###
 
-angular.module('app.services', [])
+angular.module('rubynas-admin.services', [])
 
 .factory 'version', -> "0.1"

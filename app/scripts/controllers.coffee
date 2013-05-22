@@ -2,7 +2,7 @@
 
 ### Controllers ###
 
-angular.module('app.controllers', [])
+angular.module('rubynas-admin.controllers', [])
 
 .controller('AppCtrl', [
   '$scope'

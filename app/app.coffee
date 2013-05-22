@@ -1,17 +1,17 @@
 'use strict'
 
 # Declare app level module which depends on filters, and services
-App = angular.module('app', [
+RubynasAdmin = angular.module('rubynas-admin', [
   'ngCookies'
   'ngResource'
-  'app.controllers'
-  'app.directives'
-  'app.filters'
-  'app.services'
+  'rubynas-admin.controllers'
+  'rubynas-admin.directives'
+  'rubynas-admin.filters'
+  'rubynas-admin.services'
   'partials'
 ])
 
-App.config([
+RubynasAdmin.config([
   '$routeProvider'
   '$locationProvider'
 

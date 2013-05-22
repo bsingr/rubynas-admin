@@ -2,7 +2,7 @@
 
 ### Filters ###
 
-angular.module('app.filters', [])
+angular.module('rubynas-admin.filters', [])
 
 .filter('interpolate', [
   'version',
