@@ -5,3 +5,50 @@ ul.nav
     a(ng-href='#/view1') view1
   li(ng-class="getClass('/view2')")
     a(ng-href='#/view2') view2
+ul.nav
+  li
+    a(href="/system/summary") Dashboard
+  li.dropdown
+    a.dropdown-toggle(data-toggle="dropdown", href="#")
+      | System 
+      span.caret
+    ul.dropdown-menu
+      li
+        a(ng-click="open('users')", href="#")
+          | Users
+      li
+        a(ng-click="open('groups')", href="#")
+          | Groups
+      li
+        a(ng-click="open('volumes')", href="#")
+          | Volumes
+      li
+        a(ng-click="open('shared_folders')", href="#")
+          | Shared Folders
+  li.dropdown
+    a.dropdown-toggle(data-toggle="dropdown", href="#")
+      | Services 
+      span.caret
+    ul.dropdown-menu
+      li
+        a(href="#") ZFS
+      li
+        a(href="#") AFP
+      li
+        a(href="#") Samba
+      li
+        a(href="#") Monitoring
+  li.dropdown
+    a.dropdown-toggle(data-toggle="dropdown", href="#")
+      | Apps 
+      span.caret
+    ul.dropdown-menu
+      li
+        a(href="#")
+          | Redmine?
+      li
+        a(href="#")
+          | Gitosis?
+ul.nav.pull-right
+  li
+    a(href="#") Logout
