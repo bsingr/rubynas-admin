@@ -19,6 +19,9 @@ RubynasAdmin.config([
 
   $routeProvider
 
+    .when "/shared_folders",
+      controller: SharedFolderListController,
+      templateUrl: "/partials/shared_folders.index.html"
     .when('/todo', {templateUrl: '/partials/todo.html'})
     .when('/view1', {templateUrl: '/partials/partial1.html'})
     .when('/view2', {templateUrl: '/partials/partial2.html'})
