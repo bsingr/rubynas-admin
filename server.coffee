@@ -20,8 +20,8 @@ exports.startServer = (port, path, callback) ->
   app.get '/api/system/vmstat', mock_all('vmstat')
   app.get '/api/users', mock_all('users')
   app.get '/api/users/:id', mock_by_id('users')
-  app.get '/api/groups', mock_all('users')
-  app.get '/api/groups/:id', mock_by_id('users')
+  app.get '/api/groups', mock_all('groups')
+  app.get '/api/groups/:id', mock_by_id('groups')
   app.get '/api/volumes', mock_all('volumes')
   app.get '/api/volumes/:id', mock_by_id('volumes')
     
