@@ -22,7 +22,7 @@ exports.startServer = (port, path, callback) ->
   app.get '/api/users', mock_all('users')
   app.get '/api/users/:id', mock_by_id('users', 'common_name')
   app.get '/api/groups', mock_all('groups')
-  app.get '/api/groups/:id', mock_by_id('groups')
+  app.get '/api/groups/:id', mock_by_id('groups', 'common_name')
   app.get '/api/volumes', mock_all('volumes')
   app.get '/api/volumes/:id', mock_by_id('volumes')
   app.listen port
