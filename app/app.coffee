@@ -4,6 +4,7 @@
 RubynasAdmin = angular.module('rubynas-admin', [
   'ngCookies'
   'ngResource'
+  'bytes'
   'jquery.timeago'
   'rubynas-admin.controllers'
   'rubynas-admin.directives'
