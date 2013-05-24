@@ -2,6 +2,7 @@
 
 # Declare app level module which depends on filters, and services
 RubynasAdmin = angular.module('rubynas-admin', [
+  'httpError'
   'ngCookies'
   'ngResource'
   'bytes'
@@ -19,11 +20,13 @@ RubynasAdmin = angular.module('rubynas-admin', [
 RubynasAdmin.config([
   '$routeProvider'
   '$locationProvider'
+  '$httpProvider'
 
-($routeProvider, $locationProvider, config) ->
+($routeProvider, $locationProvider, $httpProvider, config) ->
+  # Show backend http errors
+  $httpProvider.responseInterceptors.push('httpErrorInterceptor')
 
   $routeProvider
-
     .when "/system/summary",
       controller: SystemSummaryController
       templateUrl: "/partials/system.summary.html"
