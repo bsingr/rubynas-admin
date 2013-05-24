@@ -8,6 +8,7 @@ RubynasAdmin = angular.module('rubynas-admin', [
   'rubynas-admin.directives'
   'rubynas-admin.filters'
   'rubynas-admin.services'
+  'rubynas-admin.user'
   'rubynas-admin.group'
   'partials'
 ])
