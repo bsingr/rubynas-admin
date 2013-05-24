@@ -10,6 +10,7 @@ RubynasAdmin = angular.module('rubynas-admin', [
   'rubynas-admin.services'
   'rubynas-admin.user'
   'rubynas-admin.group'
+  'rubynas-admin.volume'
   'partials'
 ])
 
