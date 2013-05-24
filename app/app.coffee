@@ -33,6 +33,9 @@ RubynasAdmin.config([
     .when "/groups",
       controller: GroupListController,
       templateUrl: "/partials/groups.index.html"
+    .when "/groups/:cn",
+      controller: GroupController,
+      templateUrl: "/partials/groups.form.html"
     .when "/users",
       controller: UserListController,
       templateUrl: "/partials/users.index.html"
