@@ -10,7 +10,7 @@ exports.startServer = (port, path, callback) ->
   app.get '/api/users/:id', (req, res) -> res.sendfile './api-mock/users.json'
   app.get '/api/groups', (req, res) -> res.sendfile './api-mock/users.json'
   app.get '/api/groups/:id', (req, res) -> res.sendfile './api-mock/users.json'
-  app.get '/api/volumes', (req, res) -> res.sendfile './api-mock/users.json'
-  app.get '/api/volumes/:id', (req, res) -> res.sendfile './api-mock/users.json'
+  app.get '/api/volumes', (req, res) -> res.sendfile './api-mock/volumes.json'
+  app.get '/api/volumes/:id', (req, res) -> res.sendfile './api-mock/volumes.json'
   app.listen port
   console.log 'Listening on port: '+port
