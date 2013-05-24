@@ -24,6 +24,5 @@ exports.startServer = (port, path, callback) ->
   app.get '/api/groups/:id', mock_by_id('groups')
   app.get '/api/volumes', mock_all('volumes')
   app.get '/api/volumes/:id', mock_by_id('volumes')
-    
   app.listen port
   console.log 'Listening on port: '+port
