@@ -25,10 +25,10 @@ RubynasAdmin.config([
   $routeProvider
 
     .when "/system/summary",
-      controller: SystemSummaryController,
+      controller: SystemSummaryController
       templateUrl: "/partials/system.summary.html"
     .when "/shared_folders",
-      controller: SharedFolderListController,
+      controller: SharedFolderListController
       templateUrl: "/partials/shared_folders.index.html"
     .when "/volumes",
       controller: VolumeListController
