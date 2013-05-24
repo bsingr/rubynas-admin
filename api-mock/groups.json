@@ -1,1 +1,7 @@
-[{"name": "foo"}]
+[{
+  "gid_number": "1",
+  "common_name": "pauls group"
+},{
+  "gid_number": "2",
+  "common_name": "maras group"
+}]
