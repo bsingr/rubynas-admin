@@ -30,6 +30,9 @@ RubynasAdmin.config([
     .when "/shared_folders",
       controller: SharedFolderListController
       templateUrl: "/partials/shared_folders.index.html"
+    .when "/shared_folders/:id",
+      controller: SharedFolderController
+      templateUrl: "/partials/shared_folders.form.html"
     .when "/groups",
       controller: GroupListController,
       templateUrl: "/partials/groups.index.html"
