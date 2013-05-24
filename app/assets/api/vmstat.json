@@ -1,0 +1,17 @@
+{
+  "load_average": 10,
+  "boot_time": 10,
+  "cpus": [{
+    "idle": 1,
+    "nice": 2,
+    "system": 1,
+    "user": 2
+  }],
+  "memory": {
+    "free": 10,
+    "pagesize": 50,
+    "wired": 5,
+    "active": 10,
+    "inactive": 30
+  }
+}
