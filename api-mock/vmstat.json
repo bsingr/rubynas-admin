@@ -1,6 +1,6 @@
 {
   "load_average": 10,
-  "boot_time": 10,
+  "boot_time": "2010-01-01 10:00",
   "cpus": [{
     "idle": 1,
     "nice": 2,
