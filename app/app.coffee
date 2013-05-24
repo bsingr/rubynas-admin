@@ -33,6 +33,9 @@ RubynasAdmin.config([
     .when "/volumes",
       controller: VolumeListController
       templateUrl: "/partials/volumes.index.html"
+    .when "/volumes/:id",
+      controller: VolumeController
+      templateUrl: "/partials/volumes.form.html"
     .when('/todo', {templateUrl: '/partials/todo.html'})
     .when('/view1', {templateUrl: '/partials/partial1.html'})
     .when('/view2', {templateUrl: '/partials/partial2.html'})
