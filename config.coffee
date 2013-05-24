@@ -1,5 +1,10 @@
 exports.config =
   # See docs at http://brunch.readthedocs.org/en/latest/config.html.
+  server:
+      path: 'server.coffee'
+      port: 3333
+      base: '/'
+      run: yes
   conventions:
     ignored: /(^vendor\\.*\.less)|(^vendor\/.*\.less)|(^|\/)node_modules\/|(^|\/)_/
     assets: /^app\/assets\//
