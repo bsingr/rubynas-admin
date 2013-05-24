@@ -1,5 +1,5 @@
 window.SystemSummaryController = ($scope, $http, User, Volume) ->
-  $scope.users = [] #User.query()
+  $scope.users = User.query()
   
   # Map all cpus to a single value
   mapCpus = (cpus) ->
@@ -51,4 +51,4 @@ window.SystemSummaryController = ($scope, $http, User, Volume) ->
   updateVmstat()
   
   # setup update interval
-  #setInterval updateVmstat, 5000
+  setInterval updateVmstat, 5000
