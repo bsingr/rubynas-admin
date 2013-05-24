@@ -1,17 +1,22 @@
 {
-  "load_average": 10,
+  "load_average": 4,
   "boot_time": "2010-01-01 10:00",
   "cpus": [{
-    "idle": 1,
-    "nice": 2,
-    "system": 1,
-    "user": 2
+    "idle": 10,
+    "nice": 20,
+    "system": 11,
+    "user": 22
   }],
   "memory": {
-    "free": 10,
-    "pagesize": 50,
+    "free": 400131,
+    "pagesize": 40122101,
     "wired": 5,
-    "active": 10,
-    "inactive": 30
-  }
+    "active": 1231,
+    "inactive": 2132323
+  },
+  "network_interfaces": [{
+    "name": "eth0",
+    "in_bytes": 492332,
+    "out_bytes": 10
+  }]
 }
