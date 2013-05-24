@@ -1,1 +1,13 @@
-[{"name": "foo"}]
+[{
+  "uid_number": "1",
+  "gid_number": "1",
+  "common_name": "paul",
+  "home_directory": "/home/paul",
+  "mail": "paul@example.com"
+},{
+  "uid_number": "2",
+  "gid_number": "2",
+  "common_name": "mara",
+  "home_directory": "/home/mara",
+  "mail": "mara@example.com"
+}]
