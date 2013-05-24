@@ -22,9 +22,9 @@ html(lang='en', ng-app='rubynas-admin')
     script(src='/js/vendor.js')
     script(src='/js/partials.js')
     script(src='/js/app.js')
-  body(ng-controller='AppCtrl')
+  body
     .wrapper
-      .navbar.navbar-static-top
+      .navbar.navbar-static-top(ng-controller='NavCtrl')
         .navbar-inner
           .container
             button.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')

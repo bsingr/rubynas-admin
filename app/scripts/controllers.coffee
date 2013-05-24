@@ -4,7 +4,7 @@
 
 angular.module('rubynas-admin.controllers', [])
 
-.controller('AppCtrl', [
+.controller('NavCtrl', [
   '$scope'
   '$location'
   '$resource'
