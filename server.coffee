@@ -4,13 +4,13 @@ mock_all = (name) ->
 mock_by_id = (name, id_key) ->
   id_key = 'id' unless id_key
   return (req, res) ->
-    found = require('./api-mock/'+name+'.json').filter (obj) ->
+    data = require('./api-mock/'+name+'.json')
+    found = data.filter (obj) ->
       obj[id_key].toString() == req.params.id
     if found.length
       res.send 200, found[0]
     else
-      res.send 404, {}
-
+      res.send 404, "Could not find "+req.params.id+" within "+JSON.stringify(data)
 express = require 'express'
 app = express()
 
