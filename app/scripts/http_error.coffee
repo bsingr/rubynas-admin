@@ -20,5 +20,6 @@ angular.module('httpError', [])
             method: response.config.method
         $modal = $digest.find('.http-error.modal').modal()
         $iframe = $modal.find('iframe')
+        $iframe[0].contentDocument.body.innerHTML = ''
         $iframe[0].contentDocument.write(response.data)
     templateUrl: "/partials/http_error.html"
