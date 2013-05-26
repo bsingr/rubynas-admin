@@ -1,3 +1,13 @@
+# rubynas-admin
+
+Web-based admin interface for [rubynas](http://github.com/rubynas).
+
+Built with:
+
+* [AngularJS](http://angularjs.org)
+* [Brunch](http://brunch.io)
+* [Bower](http://bower.io/)
+
 # angular-brunch-seed
 ### A starter project for AngularJS using Brunch.io
 
