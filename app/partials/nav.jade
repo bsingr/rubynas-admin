@@ -1,22 +1,22 @@
 ul.nav
   li(ng-class="getClass('/system/summary')")
-    a(ng-href="#/system/summary") Dashboard
+    a(ng-href="/system/summary") Dashboard
   li.dropdown
     a.dropdown-toggle(data-toggle="dropdown", href="#")
       | System 
       span.caret
     ul.dropdown-menu
       li
-        a(ng-href="#/users")
+        a(ng-href="/users")
           | Users
       li
-        a(ng-href="#/groups")
+        a(ng-href="/groups")
           | Groups
       li
-        a(ng-href="#/volumes")
+        a(ng-href="/volumes")
           | Volumes
       li
-        a(ng-href="#/shared_folders")
+        a(ng-href="/shared_folders")
           | Shared Folders
   li.dropdown
     a.dropdown-toggle(data-toggle="dropdown", href="#")
