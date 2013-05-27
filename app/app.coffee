@@ -59,5 +59,5 @@ RubynasAdmin.config([
     .otherwise({redirectTo: '/system/summary'})
 
   # Without server side support html5 must be disabled.
-  $locationProvider.html5Mode(false)
+  $locationProvider.html5Mode(true)
 ])
