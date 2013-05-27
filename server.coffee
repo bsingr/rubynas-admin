@@ -17,7 +17,6 @@ app = express()
 app.use(express.static __dirname+'/_public')
 
 exports.startServer = (port, path, callback) ->
-  app.get '/', (req, res) -> res.sendfile './_public/index.html'
   app.get '/api/system/vmstat', mock_all('vmstat')
   app.get '/api/users', mock_all('users')
   app.get '/api/users/:id', mock_by_id('users', 'common_name')
@@ -25,5 +24,6 @@ exports.startServer = (port, path, callback) ->
   app.get '/api/groups/:id', mock_by_id('groups', 'common_name')
   app.get '/api/volumes', mock_all('volumes')
   app.get '/api/volumes/:id', mock_by_id('volumes')
+  app.use (req, res) -> res.sendfile './_public/index.html'
   app.listen port
   console.log 'Listening on port: '+port
