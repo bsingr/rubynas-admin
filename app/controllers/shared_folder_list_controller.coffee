@@ -1,14 +1,5 @@
-window.SharedFolderListController = ($scope, $location) ->
-  $scope.sharedFolders = [
-    {
-      id: 1
-      path: "/home/admin"
-    },
-    {
-      id: 2
-      path: "/"
-    }
-  ]
+window.SharedFolderListController = ($scope, $location, SharedFolder) ->
+  $scope.sharedFolders = SharedFolder.query()
 
   $scope.edit = (id) ->
     $location.path("/shared_folders/" + id)
