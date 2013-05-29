@@ -24,6 +24,8 @@ exports.startServer = (port, path, callback) ->
   app.get '/api/groups/:id', mock_by_id('groups', 'common_name')
   app.get '/api/volumes', mock_all('volumes')
   app.get '/api/volumes/:id', mock_by_id('volumes')
+  app.get '/api/shared_folders', mock_all('shared_folders')
+  app.get '/api/shared_folders/:id', mock_by_id('shared_folders')
   app.use (req, res) -> res.sendfile './_public/index.html'
   app.listen port
   console.log 'Listening on port: '+port
