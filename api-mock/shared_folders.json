@@ -4,4 +4,13 @@
 },{
   "id": "2",
   "path": "/bar"
+},{
+  "id": "3",
+  "path": "/baz/foo"
+},{
+  "id": "4",
+  "path": "/baz/bar"
+},{
+  "id": "5",
+  "path": "/baz/bar/foo"
 }]
